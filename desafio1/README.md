@@ -1,7 +1,5 @@
-# Desafios Kukak
-## Desafio 1
-
+# Desafios Kukak (Desafio 1)
 # Instale as dependências
-## npm i, npm install, ou yarn install 
+npm i, npm install, ou yarn install 
 # Run code
-## npm start or yarn start
+npm start or yarn start
