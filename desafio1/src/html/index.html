@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Números Palíndromos</h1>
+    </header>
+    <main>
+        <form id="execute">
+            <div class="input-block">
+                <label for="firstNumber"> Primeiro Número </label>
+                <input type="number" id="firstNumber" required />
+            </div>
+
+            <div class="input-block">
+                <label for="secondNumber"> Segundo Número </label>
+                <input type="number" id="secondNumber" required />
+            </div>
+        </form>
+        <button type="submit" form="execute" class="btn" onclick="palindromos(event)">Filtrar</button>
+    </main>
+
+    <div class="result">
+        <h2>Resultado</h2>
+        <p></p>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

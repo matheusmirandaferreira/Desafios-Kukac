@@ -1,0 +1,164 @@
+:root {
+  --color-body: #0D5EDE;;
+  --color-bg-primary: #2633F5;;
+  --color-bg: #09299E;;
+  --color-dark:#041b6e;
+}
+
+/* Color Theme Swatches in Hex */
+.Copy-of-ROYAL-BLUE-HUES-1-hex { color: #09299E; }
+.Copy-of-ROYAL-BLUE-HUES-2-hex { color: #0D5EDE; }
+.Copy-of-ROYAL-BLUE-HUES-3-hex { color: #2633F5; }
+.Copy-of-ROYAL-BLUE-HUES-4-hex { color: #0836C5; }
+.Copy-of-ROYAL-BLUE-HUES-5-hex { color: #0F2ABF; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+  background: linear-gradient(150deg, blue, var(--color-bg));
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+main {
+  background-color: var(--color-body);
+  width: 60vw;
+  padding: 1.8rem;
+  border-radius: 1.8rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.input-block {
+  margin-top: 1.8rem;
+}
+
+.input-block label {
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0.3rem 0;
+}
+
+.input-block label small {
+  font-size: 0.8rem;
+}
+
+.input-block input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition-duration: 0.2s;
+}
+
+.input-block input:focus {
+  border: 2px solid var(--color-dark);
+  box-shadow: 2px 3px 6px var(--color-dark);
+}
+
+.input-block input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.btn {
+  background-color: var(--color-dark);
+  margin: 1.8rem 0;
+  padding: 15px;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-bg);
+}
+
+.btn:active {
+  box-shadow: 1px 1px 1px var(--color-dark);
+}
+
+.result {
+  box-sizing: border-box;
+  width: 60vw;
+  padding: 1.8rem;
+  margin: 2rem auto;
+  border-radius: 1.8rem;
+  background-color: var(--color-body);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  transition: 0.2s;
+}
+
+.result h1 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.result h2 {
+  margin: 1.8rem 0 0.8rem 0;
+}
+
+.result p {
+  max-width: 60vw;
+  display: flex;
+}
+
+.off {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  header {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  main {
+    box-sizing: border-box;
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .result {
+    width: 100vw;
+    border-radius: 0rem;
+  }
+}
