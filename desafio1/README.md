@@ -1,4 +1,6 @@
 # Desafios Kukak (Desafio 1)
+## Verifique se está no diretório correto
+ ex: C/desafios-kucak/desafio4
 ## Instale as dependências
 npm i, npm install, ou yarn install 
 ## Run code
