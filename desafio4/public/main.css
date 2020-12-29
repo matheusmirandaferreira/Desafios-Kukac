@@ -1,0 +1,146 @@
+:root {
+  --color-body: rgb(0, 255, 0);
+  --color-bg: rgb(22, 201, 22);
+  --color-dark: rgb(19, 160, 19);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans";
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(150deg, rgb(22, 177, 22), var(--color-bg));
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+main {
+  background-color: var(--color-body);
+  width: 60vw;
+  padding: 1.8rem;
+  border-radius: 1.8rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.input-block:first-child {
+  margin: 0;
+}
+
+.input-block {
+  margin-top: 1.8rem;
+}
+
+.input-block label {
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0.3rem 0;
+}
+
+.input-block input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition-duration: 0.2s;
+}
+
+.input-block input:focus {
+  border: 2px solid var(--color-dark);
+  box-shadow: 2px 3px 6px var(--color-dark);
+}
+
+.input-block input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.btn {
+  background-color: var(--color-bg);
+  margin-top: 1.8rem;
+  padding: 15px;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-dark);
+}
+
+.btn:active {
+  box-shadow: 1px 1px 1px var(--color-dark);
+}
+
+.result {
+  box-sizing: border-box;
+  width: 60vw;
+  padding: 1.8rem;
+  margin: 2rem auto;
+  border-radius: 1.8rem;
+  background-color: var(--color-body);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.result h1 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.off {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  header {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  main {
+    box-sizing: border-box;
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .result {
+    width: 100vw;
+    border-radius: 0rem;
+  }
+}

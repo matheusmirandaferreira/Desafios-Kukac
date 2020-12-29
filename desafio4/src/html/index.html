@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 4 | Kukac</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <h1>Seu CEP</h1>
+    <main>
+        <form action="/cep/findcep" id="ceps" method="POST">
+            <div class="input-block">
+                <label for="cep1">Informe um CEP</label>
+                <input name="cep1" id="cep1" type="number" maxlength="8" required />
+            </div>
+            <div class="input-block">
+                <label for="cep2">Informe outro CEP</label>
+                <input name="cep2" id="cep2" type="number" maxlength="8" required />
+            </div>
+            <div class="input-block">
+                <label for="cep3">Informe outro CEP</label>
+                <input name="cep3" id="cep3" type="number" maxlength="8" required />
+            </div>
+            <div class="input-block">
+                <label for="cep4">Informe outro CEP</label>
+                <input name="cep4" id="cep4" type="number" maxlength="8" required />
+            </div>
+            <div class="input-block">
+                <label for="cep5">Informe outro CEP</label>
+                <input name="cep5" id="cep5" type="number" maxlength="8" required />
+            </div>
+        </form>
+        <button type="submit" form="ceps" class="btn">
+            Buscar
+        </button>
+    </main>
+    <!-- FAILD :/ -->
+    <!--     <div class="result">
+      <h1>Detalhes</h1>
+      <div>
+          {{address1}}
+          {{address2}}
+          {{address3}}
+          {{address4}}
+          {{address5}}
+        </div>
+      </div> -->
+</body>
+
+</html>
